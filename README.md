@@ -8,3 +8,9 @@ This repository contains the data and code for the paper "OpenEP: Open-Ended Fut
 
 ## 1. Quick Start
 The code repository is based on Pytorch and Transformers. Please use the following command to install the necessary dependcies. `install -r requirements.txt`.
+
+
+## 2. Data
+We collect daily hot topic to pose predictive questions from seven persectives. The data samples are shown in `data/question_samples.json` and `data/answer_samples.json`.
+
+## 3. 
