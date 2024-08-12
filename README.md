@@ -5,5 +5,9 @@ This repository contains the data and code for the paper "OpenEP: Open-Ended Fut
 
 <img src="images/example_display.png" align="middle"  width="600" />
 
+<p align = "center">    
+<img  src="images/example_display.png" width="400" />
+</p>
+
 ## 1. 
 
