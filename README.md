@@ -15,8 +15,6 @@ We collect daily hot topic to pose predictive questions from seven persectives. 
 
 ## 3. Run Experiments
 We use GPT-3.5 and GLM-4 as the backbone models. To run the experiments, please follow the steps outlined below.
-```python
-Step #1
-Place your api keys in files: src/api_keys.py
+1. Place your api keys in file: `src/api_keys.py`.
+2. Specify `data_path`, `response_path`, and `model_name` in file `script/`.
 
-```
