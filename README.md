@@ -16,6 +16,8 @@ We collect daily hot topic to pose predictive questions from seven persectives. 
 ## 3. Run Experiments
 We use GPT-3.5 and GLM-4 as the backbone models. To run the experiments, please follow the steps outlined below.
 1. Place your api keys in file: `src/api_keys.py`.
-2. Specify `data_path`, `response_path`, and `model_name` in file `script/`.
+2. Specify `data_path`, `response_path`, and `model_name` in files `script/run_chatgpt_cn.sh` or `script/run_glm4_cn.sh`.
 
-## 4. 
+## 4. Evaluation
+1. Place your api keys in file: `src/api_keys.py`.
+2. Specify `predictions_path`, `questions_path`, `ground_truth_path`, and `model_name` in file `script/run_evaluation.sh`.
