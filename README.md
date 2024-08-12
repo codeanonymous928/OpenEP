@@ -7,4 +7,4 @@ This repository contains the data and code for the paper "OpenEP: Open-Ended Fut
 </p>
 
 ## 1. Quick Start
-The code repository is based on Pytorch and Transformers. Please use the following command to install the necessary dependcies. pip install -r requirements.txt.
+The code repository is based on Pytorch and Transformers. Please use the following command to install the necessary dependcies. `install -r requirements.txt`.
