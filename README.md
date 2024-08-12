@@ -6,5 +6,5 @@ This repository contains the data and code for the paper "OpenEP: Open-Ended Fut
 <img  src="images/example_display.png" width="600" />
 </p>
 
-## 1. 
-
+## 1. Quick Start
+The code repository is based on Pytorch and Transformers. Please use the following command to install the necessary dependcies. pip install -r requirements.txt.
