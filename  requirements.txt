@@ -1,0 +1,10 @@
+openai==1.35.3
+rank-bm25==0.2.2
+sentence-transformers==2.2.2
+torch==2.1.2
+transformers==4.32.0
+scikit-learn==1.2.2
+sentencepiece==0.2.0
+tiktoken==0.6.0
+zhipuai==2.1.1.20240620.1
+scikit-learn==1.2.2
