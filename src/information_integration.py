@@ -121,7 +121,7 @@ class ChatIntegration():
         rel_unique_chunks = list(set(rel_total_chunks))
 
         print('Hierarchical Tree for Relevant News ...')
-        rel_clusters_idx, rel_cluster_count, rel_node_content, rel_node_desc =  self.tree_builder.node_description(rel_unique_chunks)
+        rel_node_desc =  self.tree_builder.node_description(rel_unique_chunks)
 
         print('Chunks Extarction Similar News ... ')
         sim_node_list = []
@@ -142,10 +142,10 @@ class ChatIntegration():
             
             # build the hierarchical tree for similar news
             print('Hierarchical Tree for Similar News ...')
-            clusters_idx, cluster_count, sim_node_content, sim_node_desc = self.tree_builder.node_description(sim_unique_chunks)
+            sim_node_desc = self.tree_builder.node_description(sim_unique_chunks)
             sim_node_list.append(sim_node_desc)
 
-        res = self.prediction(query_id, question, date_question, query_desc, relevant_news, similar_news, rel_node_desc, sim_node_desc, question_type, start_time)
+        res = self.prediction(query_id, question, date_question, query_desc, relevant_news, similar_news, rel_node_desc, sim_node_list, question_type, start_time)
 
         return res
         
