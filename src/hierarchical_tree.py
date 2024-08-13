@@ -134,7 +134,7 @@ class TreeBuilder:
 
 
     def node_description(self, data):
-        if len(data) < 5:
+        if len(data) < self.config['min_clusters']:
             data += ['There is no data.'] * (5 - len(data))
 
         cluster_count, cluster_labels, node_contents = self.perform_clustering(data)
