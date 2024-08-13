@@ -134,15 +134,15 @@ class TreeBuilder:
 
 
     def node_description(self, data):
-        if len(data) < self.config['min_clusters']:
-            data += ['There is no data.'] * (5 - len(data))
+        if len(data) > self.config['min_clusters']:
+            cluster_count, cluster_labels, node_contents = self.perform_clustering(data)
+            content_list = list(node_contents.values())
+    
+            with ThreadPoolExecutor(max_workers=8) as executor:
+                node_desc = executor.map(self.summary, content_list) 
+            node_desc = list(node_desc)
+        esle:
+            node_desc = data
 
-        cluster_count, cluster_labels, node_contents = self.perform_clustering(data)
-        content_list = list(node_contents.values())
-
-        with ThreadPoolExecutor(max_workers=8) as executor:
-            node_desc = executor.map(self.summary, content_list) 
-        node_desc = list(node_desc)
-
-        return cluster_labels, cluster_count, node_contents, node_desc
+        return node_desc
 
