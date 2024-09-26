@@ -11,7 +11,12 @@ The code repository is based on Pytorch and Transformers. Please use the followi
 
 
 ## 2. Data
-We collect daily hot topics to generate predictive questions from seven persectives. The data samples are shown in `data/question_samples.json` and `data/answer_samples.json`.
+We collect daily hot topics to generate predictive questions from seven persectives. 
+
+The whole data is shown in `data/data/cn_valid_data.json` and `data/data/en_valid_data.json`.
+
+The data samples with responses are shown in `data/samples/question_samples.json` and `data/samples/answer_samples.json`.
+
 
 ## 3. Run Experiments
 We use GPT-3.5 and GLM-4 as the backbone models. To run the experiments, please follow the steps outlined below.
