@@ -15,7 +15,7 @@ We collect daily hot topics to generate predictive questions from seven persecti
 
 The whole data is shown in `data/data/cn_valid_data.json` and `data/data/en_valid_data.json`.
 
-The data samples with responses are shown in `data/samples/question_samples.json` and `data/samples/answer_samples.json`.
+The samples with responses are shown in `data/samples/question_samples.json` and `data/samples/answer_samples.json`.
 
 
 ## 3. Run Experiments
